@@ -12,6 +12,7 @@ A Simple To-do app design in flutter to keep track of your task on daily basis. 
 
 ## Features
 
+- Build on [**BLoC**](#bloc-diagram) Architecture Pattern
 - Add [**Projects**](#project) by specifying a unique color to it
 - Add [**Labels**](#labels) by specifying a unique color to it
 - Add [**Task**](#task) by defining its priority
@@ -19,6 +20,15 @@ A Simple To-do app design in flutter to keep track of your task on daily basis. 
 - [**Sorting**](#sorting) Task
 - Works offline using [**Sqflite**](https://github.com/tekartik/sqflite "Flutter Database") database
 
+## BLoC Diagram
+This diagram show case the dependencies to create a feature specific BLoCs.The HomeBloc is independent and used as communication channel between its child widgets.
+
+![](https://i.imgur.com/byajGE7.png)
+
+## Widget-BLoC Relationship
+This diagram shows that how each widget uses BLoCs.
+
+![](https://i.imgur.com/fHGTASw.png)
 
 ## Project
 The app already has a preloaded **_Inbox_** project. You can add more projects by clicking add project button on SideDrawer. From material color list you can specify any single color to the project
@@ -72,7 +82,7 @@ Hit me on twitter [![Twitter](https://img.shields.io/badge/Twitter-%40burhanrash
 ## Credits
   - UI/UX inspired from [**Todoist**](https://play.google.com/store/apps/details?id=com.todoist&hl=en) app
   - Flutter [**Documentation**](https://flutter.io/docs/)
-  - [**Collin ackson**](https://stackoverflow.com/users/1463116/collin-jackson) answer's on stackoverflow :laughing:
+  - [**Collin Jackson**](https://stackoverflow.com/users/1463116/collin-jackson) answer's on stackoverflow :laughing:
 
 ## License
 Copyright 2018 Burhanuddin Rashid
